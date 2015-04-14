@@ -133,129 +133,26 @@ by genotype at that locus.
 <p class="pg">4</p></section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <section>
-<h3>&nbsp;</h3>
 
-<div id="lod_and_effect" class="fig"></div>
+<div style="margin-left:100px;margin-top:50px;">
+<a href="https://www.biostat.wisc.edu/~kbroman/D3/car_crashes/">
+<img src="Figs/car_crashes.png" height="800"/></a>
+</div>
 
 <aside>
-We know we should not rely solely on summary statistics (like the LOD
-score), but if it takes an extra step to plot the underlying details,
-we tend not to do it, or at least not so much as we should.<br><br>
-
-I&rsquo;ve come to the conclusion that <em>every</em> graph could be
-improved with interactivity. You at least want tooltips.<br><br>
-
-The curves at the top are the same LOD curves we saw before. The LOD
-score is a measure of association between genotype and phenotype.<br><br>
-
-Click on a chromosome in the top panel to see a detailed view in the
-lower-left panel.  Click on a marker in the lower-left panel to see
-effect estimates and raw data on the right.  Hover over things on the
-right to get some further information.
+Linked plots are really helpful for exploring high-dimensional
+data. These are data on car crash statistics, from <a
+href="http://fivethirtyeight.com/datalab/which-state-has-the-worst-drivers/">a
+post at 538.com</a>
 </aside>
 
 <p class="codelink">
-<a href="Coffee/lod_and_effect.coffee" class="gray">code</a> |
-<a href="Data/insulinlod.json" class="gray">data</a></p>
-
-<script type="text/javascript" src="JS/lod_and_effect.js"></script>
-<p class="pg">17</p></section>
+<a href="https://kbroman.wordpress.com/2014/10/29/improved-graphs-of-car-crash-stats/">kbroman.wordpress.com</a>
+</p>
+<p class="pg">5</p></section>
 
 
-
-
-<section>
-
-<h3>&nbsp;</h3>
-
-<div id="lod_alltimes_fig" style="font-size:20px;margin-left:-50px;"></div>
-
-<aside>
-I write a lot of reports to collaborators, describing my analysis
-results and conclusions.
-It&rsquo;s hard to anticipate all possible questions that a collaborator
-might have. (&ldquo;What gene is that?&rdquo;) And you can only show
-so many pictures. <br><br>
-
-Including interactive graphs in a report allows my collaborators to
-answer a lot of their own questions on their own and to more fully
-explore their own data.
-And a single interactive graph can take the place of thousands of
-static ones.<br><br>
-
-Here we consider a phenotype measured over time, and perform QTL
-analysis with each time point individually, to seek genetic loci that
-affect the response.<br><br>
-
-The top-left plot is a &ldquo;heat map&rdquo; of the LOD scores
-for each time point at each genomic position.  LOD scores are also
-colored to indicate the sign of the QTL effect, with red indicating
-that BB lines have larger phenotype values and blue indicating that AA lines
-have larger phenotype values.  We consider only those (position, time)
-pairs with LOD > 1.<br><br>
-
-When you hover over a point in the top-left plot, the LOD curves for the
-corresponding time are shown below, and the phenotype averages and
-estimated QTL effect (across time) for the corresponding genomic
-position are shown to the right.<br><br>
-
-Click on a point to show pointwise confidence bands on the QTL
-effect (&plusmn; 2 SE).  (We require a mouse click, as otherwise the graph
-was painfully slow to refresh.)
-</aside>
-
-
-<p class="codelink">
-<a href="Coffee/lod_alltimes.coffee" class="gray">code</a> |
-<a href="Data/all_lod.json" class="gray">data</a></p>
-
-<script type="text/javascript" src="JS/lod_alltimes.js"></script>
-
-<p class="pg">18</p></section>
-
-
-
-<section>
-
-<h3>&nbsp;</h3>
-
-<div id="lod_onetime_random_fig" style="margin-left:-30px;"></div>
-
-<p class="codelink">
-<a href="Coffee/lod_onetime_random.coffee" class="gray">code</a> |
-<a href="Data/onetime_random.json" class="gray">data</a></p>
-
-
-<script type="text/javascript" src="JS/lod_onetime_random.js"></script>
-
-<aside>
-Interactive graphs are incredibly valuable educational tools.<br><br>
-
-You can only show so many static graphs, and it can be a big step to get
-students to make more, on their own.<br><br>
-
-Interactive graphs can be a big help to build students&rsquo; intution
-and understanding, both as a demonstration, and as a tool that they
-can play with.<br><br>
-
-This is an illustration of permutation test: Click the green button to shuffle
-the phenotypes and re-draw the LOD curves.
-</aside>
-
-<p class="pg">19</p></section>
 
 
 
@@ -291,91 +188,8 @@ dull).<br><br>
 My most common mistake is to forget to include <code>.enter()</code>.
 No error is given, but nothing shows up in the plot.
 </aside>
-<p class="pg">21</p></section>
+<p class="pg">6</p></section>
 <script type="text/javascript" src="JS/collision.js"></script>
-
-
-
-
-
-
-<section>
-<h3><a href="http://jsfiddle.net">JSFiddle</a> is awesome!</h3>
-
-<a href="http://jsfiddle.net/kbroman/v4qhh/5">
-    <img height=700 style="position:fixed;bottom:50px;left:100px;" src="Figs/jsfiddle.png">
-</a>
-
-<aside>
-D3 can be forbidding, but just start making stuff. It&rsquo;s fun, and
-eventually it&rsquo;s productive.<br><br>
-
-Learn to use your browser&rsquo;s developer tools. When something goes
-wrong, typically you just get a blank screen. The developer tools show
-the error messages, and you can test things on-the-fly.<br><br>
-
-<a href="http://jsfiddle.net">jsfiddle</a> is a huge help for learning
-javascript and D3. There are separate boxes for html, css, javascript,
-and the result.
-</aside>
-<p class="pg">22</p></section>
-
-
-
-
-
-<section>
-<h3><a href="http://coffeescript.org">Coffeescript</a> is awesome!</h3>
-
-<div id="coffee" class="medtop">
-<p><code>blob.attr("x", <span class="highlight">(d) -> d.x</span>)</code><br><br>
-<code>height = options<span class="highlight">?.</span>height ? 500</code>
-</p>
-</div>
-
-<aside>
-(I think maybe I&rsquo;ve seen the <a
-href="http://www.lego.com/en-us/movie">Lego Movie</a> too many
-times.)<br><br>
-
-I&rsquo;m using <a href="http://coffescript.org">CoffeeScript</a>
-rather than javascript. It gets translated to javascript, and
-it&rsquo;s a much nicer language.<br><br>
-
-Particularly nice are the light-weight anonymous
-functions. You&rsquo;ll be writing <em>a lot</em> of anonymous
-functions in D3.<br><br>
-
-Also, there&rsquo;s a simple syntax for handling <code>null</code>
-values, for things like options.
-</aside>
-<p class="pg">23</p></section>
-
-
-<section>
-<h3><a href="http://coffeescript.org">Coffeescript</a> is awesome!</h3>
-
-<div id="coffee" class="medtop">
-<p><code>blob.attr("x", <span class="highlight">(d) -> d.x</span>)</code><br><br>
-<code>height = options<span class="highlight">?.</span>height ? 500</code>
-</p>
-</div>
-
-<a href="http://jsfiddle.net/kbroman/cfscr/94">
-    <img height=600 style="position:fixed;bottom:10px;left:200px;" src="Figs/jsfiddle_coffee.png">
-</a>
-
-<aside>
-And you can use <a href="http://jsfiddle.net">jsfiddle</a> with
-CoffeeScript.
-</aside>
-<p class="pg">23</p></section>
-
-
-
-
-
-
 
 
 
@@ -410,18 +224,20 @@ CoffeeScript.
         <li>Can provide other hours of frustration</li>
       </ul>
 
-  <li><a href="http://rstudio.com">RStudio</a>&rsquo;s <a
-  href="http://shiny.rstudio.com">Shiny</a> and <a
-  href="http://ggvis.rstudio.com">ggvis</a> are also really exciting.</li>
-
-  <li>Write modular, reusable tools rather than scripts</li>
-
 </ul>
 
 <aside>
 It&rsquo;s always good to have a summary slide with your key points.
 </aside>
-<p class="pg">28</p></section>
+<p class="pg">7</p></section>
+
+
+
+
+
+
+
+
 
 
 
