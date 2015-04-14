@@ -1,8 +1,9 @@
 ### Talk on interactive graphics
 
-These are slides for a talk that I will give at the
+These are slides for a talk that I gave at the
 [Showcase 2015](http://quality.wisc.edu/showcase.htm) symposium by the
-UW-Madison [Office of Quality Improvement](http://quality.wisc.edu).
+UW-Madison [Office of Quality Improvement](http://quality.wisc.edu),
+14 April 2015.
 
 See them in action [here](https://www.biostat.wisc.edu/~kbroman/presentations/Showcase2015).
 
