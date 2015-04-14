@@ -18,16 +18,14 @@
 <script type="text/javascript" src="JS/slide_transition.js"></script>
 
 
-<title>Interactive graphics for high-dimensional genetic data</title>
+<title>Interactive graphics</title>
 </head>
 <body class="overview">
 
 
 
 <section class="titlepage">
-<h3 style="margin-top:-10px;" class="highlight">Interactive graphics
-for <br/>
-high-dimensional genetic data</h3>
+<h3 style="margin-top:-10px;" class="highlight">Interactive graphics</h3>
 
 <h4><a href="http://kbroman.org">Karl Broman</a></h4>
 <p class="nopadding">Biostatistics &amp; Medical Informatics, University of Wisconsin
@@ -39,15 +37,15 @@ high-dimensional genetic data</h3>
 <a href="https://twitter.com/kwbroman" class="gray">@kwbroman</a>
 </code></p>
 
-<p class="nopadding"><span class="gray">slides:</span> <code><a href="http://www.biostat.wisc.edu/~kbroman/presentations/WEHI2015">bit.ly/WEHI2015</a></code></p>
+<p class="nopadding"><span class="gray">slides:</span> <code><a href="http://www.biostat.wisc.edu/~kbroman/presentations/Showcase2015">bit.ly/Broman2015-04</a></code></p>
 
 <img style="position:fixed;bottom: 30px; right:40px; z-index: -1;" width="150px" src="Figs/cc-zero.png" />
 
 
 
 <aside>
-These are slides for a seminar I will give at the Walter and Eliza
-Hall Institute in Melbourne, Australia, 1 Apr 2015.<br><br>
+These are slides for a seminar I will give at the Showcase 2015 by the
+UW-Madison Office of Quality Improvement, 14 Apr 2015.<br><br>
 
 Click on the link at the top-right to remove these
 notes.<br><br>
@@ -59,27 +57,8 @@ in some browsers.
 </section>
 
 
-
 <section>
-<h3 class="abscenter">Why aren&rsquo;t all of our graphs
-<span id="flash" class="highlight">interactive</span>?</h3>
-<aside>
-Statisticians (and computational biologists) produce a lot of graphs,
-but they are almost exclusively static graphs. The value of
-interactive graphics has long been understood, but they&rsquo;re still
-not routine.<br><br>
-
-They should be.<br><br>
-
-(The word &ldquo;interactive&rdquo; here is interactive. Click on it
-to toggle among plain, glowing, and flashing. This is a joke.)
-
-</aside> <p class="pg">2</p></section>
-
-
-
-<section>
-<h3>1994</h3>
+<h3>&nbsp;</h3>
 <div id="density_estimate" class="chart"></div>
 
 <div style="font-size:28px;width:420px;align:center;margin-left:350px;margin-top:15px">
@@ -115,68 +94,11 @@ doing.
 
 
 
-<section>
-<h3>1987</h3>
-
-<img class="center" height="680px" src="Figs/brushing_scatterplots_1.png" />
-
-<aside>
-Interactive graphics have a long history. Becker and Cleveland
-introduced scatterplot brushing in 1987.
-</aside>
-
-<p class="pg">4</p></section>
-
-
-<section>
-<h3>1987</h3>
-
-<img class="center" width="800px" src="Figs/brushing_scatterplots_2.png" />
-
-<p class="codelink"><a
-href="http://www.jstor.org/stable/1269768">Becker &amp; Cleveland (1987)</a></p>
-
-<aside>
-Here&rsquo;s one of the many illustrations from the Becker and Cleveland
-(1987) paper. Select points in the box and they&rsquo;re highlighted elsewhere.
-</aside>
-<p class="pg">5</p></section>
-
-
-<section>
-<h3>1987</h3>
-
-<img class="center" width="800px" src="Figs/brushing_scatterplots_3.png" />
-
-<p class="codelink"><a
-href="http://www.jstor.org/stable/1269768">Becker &amp; Cleveland (1987)</a></p>
-
-<aside>
-Here&rsquo;s another illustration from the Becker and Cleveland (1987)
-paper. Select points in the box and they&rsquo;re labeled throughout.
-</aside>
-<p class="pg">6</p></section>
-
-
-<section>
-<h3>1984</h3>
-
-<img class="center" width="800px" src="Figs/Apple_Macintosh_Desktop.png" />
-
-<p class="codelink"><a
-href="http://en.wikipedia.org/wiki/Macintosh#mediaviewer/File:Apple_Macintosh_Desktop.png"><code>wikipedia.org</code></a></p>
-
-<aside>
-And recall the introduction of the Mac. Our visual interactions
-with our computers are 30 years old. But with our statistical
-graphics, not so much.
-</aside>
-<p class="pg">7</p></section>
 
 
 <section>
 
-<h3>Why? &nbsp; <span class="lowlight" id="heatmap_hide" style="opacity:0;">summary + details</span></h3>
+<h3>&nbsp;</h3>
 
 <div id="corr_w_scatter" style="margin-left:-50px;"></div>
 
@@ -201,151 +123,13 @@ by genotype at that locus.
 <p class="pg">8</p></section>
 
 
-<section>
-
-<img style="position:fixed;bottom: 0px; left:0px; z-index: -1;" width="1280px" src="Figs/inbredmice.jpg" />
-
-<aside>
-A brief aside to introduce my own research.<br><br>
-
-I focus on genetics problems, and particularly on mouse genetics.<br><br>
-
-I think these are <a
-href="http://jaxmice.jax.org/strain/000689.html">SWR mice</a>; the
-photo is from <a
-href="http://cals.ncsu.edu/genetics/index.php/people/david-threadgill/">David
-Threadgill</a>.
-</aside>
-
-<p class="pg">9</p></section>
 
 
 
 
 
 
-<section>
 
-<img style="position:fixed;top: 300px; left:120px; z-index: -1;" height="500px" src="Figs/da-vinci-man.jpg" />
-
-<img style="position:fixed;top: 300px; right:120px; z-index: -1;" height="500px" src="Figs/vitruvian_mouse.jpg" />
-
-<div style="position:fixed;bottom: 120px; right:120px;font-size:24px"><a href="http://www.daviddeen.com"><code>daviddeen.com</code></a></div>
-
-<aside>
-Mice are not humans, but you can learn a great deal about human
-biology and disease from mice.<br><br>
-
-The figure on the right is from <a
-href="http://www.daviddeen.com">David Deen</a>.
-</aside>
-<p class="pg">10</p></section>
-
-
-
-
-
-
-<section>
-
-<h3>Intercross</h3>
-
-<img src="Figs/intercross.png" />
-
-<aside>
-The main problem I tackle is to try to identify genes that underlie
-phenotypic variation.<br><br>
-
-The basic experiment I consider is an experimental cross: we start
-with two inbred strains that differ in the phenotype and perform a
-couple of generations of breeding to mix up the genomes.<br><br>
-
-We gather phenotype data on the progeny, along with genome-wide genotype
-data, and we seek to identify genomic regions for which genotype is
-associated with phenotype. We call such regions quantitative trait
-loci (QTL): genetic loci that influence a quantitative trait.
-</aside>
-<p class="pg">11</p></section>
-
-
-
-
-
-
-<section>
-
-<h3>Genome scan for QTL</h3>
-
-<img src="Figs/lodcurve_insulin.png" />
-
-<aside>
-The simplest analysis is to do a statistical test at each locus in the
-genome, to assess the association between genotype and
-phenotype.<br><br>
-
-We measure the association with a LOD score. LOD scores are log<sub>10</sub>
-likelihood ratios &mdash; a transformation of the F statistic from
-ANOVA. The details aren&rsquo;t
-important. The key is that large LOD scores indicate evidence for an
-association.<br><br>
-
-It is important to account for the scan across the genome. The dashed
-horizontal line is a threshold for statistical significance. If there
-were no association between genotype and phenotype, there&rsquo;d still be a
-5% chance of a LOD score that big <span class="highlight">somewhere</span> in the genome.
-</aside>
-<p class="pg">12</p></section>
-
-
-
-
-
-<section>
-
-<h3>Genome scan for QTL</h3>
-
-<img src="Figs/lodcurve_insulin_with_effects.png" />
-
-<aside>
-Underneath each of these peaks is an association between genotype and
-phenotype: If you group the mice by genotype at that location, you&rsquo;ll
-see a difference in the average phenotype among the groups.<br><br>
-
-The BB, BR, and RR indicate the three different genotypes, as these
-data concern a cross between two strains labeled B and R.
-</aside>
-<p class="pg">12</p></section>
-
-
-
-
-
-
-<section>
-
-<h3>Genome-scale phenotypes</h3>
-
-<img height=700 class="indent" src="Figs/mouse_on_chips.png" />
-
-<aside>
-My data visualizations have been pretty pedestrian. But in the past
-decade, I&rsquo;ve come to be swamped with data, and I&rsquo;m just beginning to
-come to grips with that.<br><br>
-
-This is a picture of a pile of gene expression arrays. More and more,
-we&rsquo;re seeing genome-scale phenotype information. For example, in
-one of my collaborations, we have data on 500 mice, each with gene
-expression microarrays for 6 different tissues.<br><br>
-
-You&rsquo;d think that with such high-dimensional data, we&rsquo;d be
-making a lot more graphs. But there&rsquo;s a tendency actually to
-make <em>fewer</em> graphs, or even <em>no</em> graphs. It&rsquo;s
-hard to look at 500 histograms, so why bother?<br><br>
-
-The photo is from <a
-href="http://www.biochem.wisc.edu/faculty/attie/">Alan Attie</a>.
-</aside>
-<p class="pg">13</p></section>
 
 
 
@@ -353,84 +137,6 @@ href="http://www.biochem.wisc.edu/faculty/attie/">Alan Attie</a>.
 
 <section>
 <h3>&nbsp;</h3>
-
-<img height=600 class="center" src="Figs/weird_correlation_matrix.png"/>
-
-<p class="codelink">
-<a href="https://kbroman.wordpress.com/2012/04/25/microarrays-suck">kbroman.wordpress.com/2012/04/25/microarrays-suck</a>
-</p>
-<aside>
-This is a correlation matrix for a set of arrays. What the heck is that?
-</aside>
-<p class="pg">14</p></section>
-
-
-<section>
-<h3>&nbsp;</h3>
-
-<img width=900 class="center" src="Figs/many_boxplots.png"/>
-
-<p class="codelink">
-<a href="https://kbroman.wordpress.com/2012/04/25/microarrays-suck">kbroman.wordpress.com/2012/04/25/microarrays-suck</a>
-</p>
-<aside>
-This is like a set of 487 boxplots of the array data, sorted by their
-median. The black line is at the median. The pink lines are at the
-25th and 75th percentiles. The green, orange, and blue lines are at 10,
-5, and 1 percentiles.<br/><br/>
-
-It turned out that there were a batch of 120 badly-behaved arrays.<br/><br/>
-
-Things to be concerned about: sample mix-ups, batch effects, bad
-assays.<br/><br/>
-
-But it&rsquo;s hard to look at the data, given the scale.
-</aside>
-<p class="pg">15</p></section>
-
-
-
-<section>
-
-<h3>Why? &nbsp; <span class="lowlight">summary + details</span></h3>
-
-<div id="manyboxplots">
-</div>
-
-<aside>
-Visualization of large data sets necessarily involves making a
-compressed summary. But with interactive graphs, you can easily
-get back to the underlying details.<br><br>
-
-This is like a set of 500 box plots (for the gene expression values
-from 500 gene expression microarray), but going farther out into the
-tails: the lines connect various quantiles: the
-1, 5, 10, 25, 50, 75, 90, 95, and 99%iles.  <br><br>
-
-Hover over an array above and see the corresponding histogram.  Click
-on an array for the histogram to persist; click again to make it go
-away.<br><br>
-
-The first 120 or so arrays are badly behaved; they all came from a
-common batch that went bad.
-</aside>
-
-<p class="codelink">
-<a href="Coffee/manyboxplots.coffee" class="gray">code</a> |
-<a href="Data/hypo.json" class="gray">data</a></p>
-
-<script type="text/javascript" src="JS/manyboxplots.js"></script>
-<p class="pg">16</p></section>
-
-
-
-
-
-
-
-
-<section>
-<h3>Why? &nbsp; <span class="lowlight">people are busy</span></h3>
 
 <div id="lod_and_effect" class="fig"></div>
 
@@ -463,7 +169,7 @@ right to get some further information.
 
 <section>
 
-<h3>Why? &nbsp; <span class="lowlight">reports to collaborators</span></h3>
+<h3>&nbsp;</h3>
 
 <div id="lod_alltimes_fig" style="font-size:20px;margin-left:-50px;"></div>
 
@@ -514,7 +220,7 @@ was painfully slow to refresh.)
 
 <section>
 
-<h3>Why? &nbsp; <span class="lowlight">teaching</span></h3>
+<h3>&nbsp;</h3>
 
 <div id="lod_onetime_random_fig" style="margin-left:-30px;"></div>
 
@@ -543,26 +249,6 @@ the phenotypes and re-draw the LOD curves.
 
 
 
-
-<section>
-<div class="center"><h3>Why not?</h3></div>
-
-
-<aside>
-Back to the original question: Why aren&rsquo;t all of our graphs
-interactive?<br><br>
-
-In part, it's because we&rsquo;ve not learned how. And it does remain
-somewhat difficult.  And there have been too many options, most of
-them incompletely developed.<br><br>
-
-Also, since journal articles are static, there's not as much incentive
-to develop interactive graphics tools.<br><br>
-
-And then most statisticians are still putting little care into
-visualizations, at all.
-</aside>
-<p class="pg">20</p></section>
 
 
 <section nopadding>
@@ -679,144 +365,12 @@ CoffeeScript.
 
 
 
-<section>
-<h3>&nbsp;</h3>
-
-<p align="center" style="margin-top:200px;font-size: 48px;"> <a href="http://code.google.com/p/google-motion-charts-with-r/">Easy</a> <span
-  class="gray">or <a href="http://d3js.org" class="highlight">flexible</a>?</span>
-
-
-<aside>You have to choose between easy or flexible; you can&rsquo;t have
-  both.  I&rsquo;m going for flexible.</aside>
-
-<p class="pg">24</p></section>
 
 
 
 
 
 
-
-
-
-<section nopadding>
-
-<h3 style="margin-top:10px;margin-left:-20px;">Interactive eQTL plot</h3>
-
-<div id="cistrans" class="fig" style="margin-top:-80px;"></div>
-
-<aside>
-Here&rsquo;s my most fancy plot. But when I showed this to my
-collaborator, his first question was, &ldquo;Where&rsquo;s my favorite
-gene?&rdquo; I needed to add a search box. <em>Moral</em>: These tools
-are not just for playing around; they need to address the scientific
-questions.<br><br>
-
-The top-left image shows inferred eQTL (sites in genome where genotype
-is associated with the expression of some gene).  The y-axis
-corresponds to the genomic location of probes on a gene expression
-array.  The x-axis corresponds to marker positions.  Dots indicate
-that the genotypes at a particular marker are associated with the
-expression of a particular probe.<br><br>
-
-Hover over a point in the top-left to see all eQTL for a given probe.
-Click on a point to see the LOD curves across the genome for that
-probe: the association between that probe&rsquo;s expression and genotype at
-each position in the genome.<br><br>
-
-Click on a marker in the lower LOD curve plot to see the corresponding
-phenotype-vs-genotype plot in the top-right.
-</aside>
-
-<p class="codelink">
-<a href="Coffee/cistrans.coffee" class="gray">code</a></p>
-
-<script type="text/javascript" src="JS/cistrans.js"></script>
-<p class="pg">25</p></section>
-
-
-
-<section>
-<h3>R/qtlcharts &nbsp; <a class="lowlight" href="http://kbroman.org/qtlcharts">kbroman.org/qtlcharts</a></h3>
-
-
-<table cellpadding=25 style="margin-top:50px;">
-  <tr><td valign="top"><a href="http://kbroman.org/qtlcharts/example/iplotScanone.html">
-               <img src="Figs/iplotScanone.png" title="iplotScanone" width=325/></a></td>
-      <td valign="top"><a href="http://kbroman.org/qtlcharts/example/iplotCorr.html">
-               <img src="Figs/iplotCorr.png" title="iplotCorr" width=325/></a></td>
-      <td valign="top"><a href="http://kbroman.org/qtlcharts/example/iplotMScanone.html">
-               <img src="Figs/iplotMScanone.png" title="iplotMScanone" width=325/></a></td>
-  </tr>
-  <tr><td valign="top"><a href="http://kbroman.org/qtlcharts/example/iplotCurves.html">
-               <img src="Figs/iplotCurves.png" title="iplotCurves" width=325/></a></td>
-      <td valign="top"><a href="http://kbroman.org/qtlcharts/example/iheatmap.html">
-               <img src="Figs/iheatmap.png" title="iheatmap" width=325/></a></td>
-      <td valign="top"><a href="http://kbroman.org/qtlcharts/example/iboxplot.html">
-               <img src="Figs/iboxplot.png" title="iboxplot" width=325/></a></td>
-  </tr>
-</table>
-
-
-<aside>
-I want to be able to generate interactive graphs rapidly: for
-my own exploratory data analysis, and for my many collaborators.<br><br>
-
-My tendency is to write a script with a bunch of code for a specific chart
-with specific data.  I need to fight that and write reusable functions.<br><br>
-
-And I need a system for generating interactive charts, so that others
-(including myself a few months from now) can make use of what I&rsquo;ve
-built.<br><br>
-
-I&rsquo;m writing an R package, <a
-href="http://kbroman.org/qtlcharts">R/qtlcharts</a> for
-interactive graphs for QTL mapping data, as a companion to my <a
-href="http://www.rqtl.org">R/qtl</a> package. It writes html
-(including the data, in <a href="http://www.json.org/">JSON</a>
-format, and links to the javascript code) to a file and then opens it
-in a browser. For small-to-medium-scale charts, this is fast and
-effective.
-</aside>
-<p class="pg">26</p></section>
-
-
-
-<section>
-<h3>R/qtlcharts &nbsp; <span class="lowlight">panels</span></h3>
-
-<table cellpadding=25 style="margin-top:100px;">
-  <tr><td valign="top"><a href="http://kbroman.org/d3panels/assets/test/dotchart">
-               <img src="Figs/dotchart.png" title="dotchart" width=225/></a></td>
-      <td valign="top"><a href="http://kbroman.org/d3panels/assets/test/cichart">
-               <img src="Figs/cichart.png" title="cichart" width=225/></a></td>
-      <td valign="top"><a href="http://kbroman.org/d3panels/assets/test/scatterplot">
-               <img src="Figs/scatterplot.png" title="scatterplot" width=225/></a></td>
-      <td valign="top"><a href="http://kbroman.org/d3panels/assets/test/heatmap">
-               <img src="Figs/heatmap.png" title="heatmap" width=225/></a></td>
-  </tr>
-  <tr><td valign="top"><a href="http://kbroman.org/d3panels/assets/test/lodheatmap">
-               <img src="Figs/lodheatmap.png" title="lodheatmap" width=225/></a></td>
-      <td valign="top"><a href="http://kbroman.org/d3panels/assets/test/lodchart">
-               <img src="Figs/lodchart.png" title="lodchart" width=225/></a></td>
-      <td valign="top"><a href="http://kbroman.org/d3panels/assets/test/curvechart">
-               <img src="Figs/curvechart.png" title="curvechart" width=225/></a></td>
-      <td valign="top"><a href="http://kbroman.org/d3panels/assets/test/mapchart">
-               <img src="Figs/mapchart.png" title="mapchart" width=225/></a></td>
-  </tr>
-</table>
-
-<aside>
-The core of <a
-href="http://kbroman.org/qtlcharts">R/qtlcharts</a> is a set of
-functions for generating specific panels (like scatterplots, heatmaps,
-and so forth).<br><br>
-
-There are also a set of functions for generating specific multi-panel
-charts that combine several of the basic panels and define the
-interactions that glue them together.
-</aside>
-<p class="pg">27</p></section>
 
 
 
@@ -852,9 +406,6 @@ interactions that glue them together.
 
   <li>Write modular, reusable tools rather than scripts</li>
 
-  <li><a href="http://kbroman.org/qtlcharts" class="hilight">R/qtlcharts</a>,
-  an R package for interactive graphs for QTL data</li>
-
 </ul>
 
 <aside>
@@ -865,104 +416,8 @@ It&rsquo;s always good to have a summary slide with your key points.
 
 
 
-<section>
-<h3>Acknowledgments<span class="lowlight"></span></h3>
-
-<div style="margin-top:-20px;margin-left:120px;font-size:28px;">
-
-<table cellspacing=25>
-  <tr valign="top">
-     <td class="lowlight">Alan Attie<br/>Mark Keller</td>
-     <td width=10></td>
-     <td>Biochemistry, UW&ndash;Madison</td>
-     </tr>
-
-  <tr valign="top">
-     <td class="lowlight">Brian Yandell</td>
-     <td></td>
-     <td>Statistics and Horticulture, UW&ndash;Madison</td>
-     </tr>
-
-  <tr valign="top">
-     <td class="lowlight">Christina Kendziorski<br/>Aimee Teo Broman</td>
-     <td></td>
-     <td>Biostatistics & Medical Informatics, UW&ndash;Madison</td>
-     </tr>
-
-  <tr valign="top">
-     <td class="lowlight">Eric Schadt
-     <td></td>
-     <td>Mount Sinai</td>
-     </tr>
-
-  <tr valign="top">
-     <td class="lowlight">Danielle Greenawalt<br/>Amit Kulkarni</td>
-     <td></td>
-     <td>Merck & Co., Inc.</td>
-     </tr>
-
-  <tr height=25><td></td></tr>
-
-  <tr valign="top">
-     <td class="lowlight">&#346;aunak Sen</td>
-     <td></td>
-     <td>Epidemiology & Biostatistics, UC-San Francisco</td>
-     </tr>
-  <tr height=25><td></td></tr>
-
-  <tr valign="top">
-     <td class="lowlight">Edgar Spalding<br/>Candace Moore<br/>Logan Johnson</td>
-     <td></td>
-     <td>Botany, UW-Madison</td>
-     </tr>
-</table>
-</div>
-
-<aside>
-Many people are involved in the studies that I presented.
-</aside>
-<p class="pg">29</p></section>
 
 
-
-
-
-<section>
-
-<div class="hugetop">
-<p class="large"><span class="gray">slides</span>: &nbsp;
-<code><a href="http://www.biostat.wisc.edu/~kbroman/presentations/WEHI2015">bit.ly/WEHI2015</a></code>
-&nbsp; <img style="vertical-align:middle;" width="150px" src="Figs/cc-zero.png" /></p>
-
-
-<p class="large"><code>
-<a href="http://kbroman.org" class="gray">kbroman.org</a><br>
-</code></p>
-
-<p class="large"><code>
-<a href="https://github.com/kbroman" class="gray">github.com/kbroman</a><br>
-</code></p>
-
-<p class="large"><code>
-<a href="https://twitter.com/kwbroman" class="gray">@kwbroman</a>
-</code></p>
-
-<p class="large"><code>
-<a href="http://kbroman.org/qtlcharts" class="gray">kbroman.org/qtlcharts</a>
-</code></p>
-
-</div>
-
-<aside>
-This is where to find me.<br><br>
-
-In particular, you can find all of my papers, talks, and software.
-</aside>
-<p class="pg">30</p></section>
-
-
-
-<script type="text/javascript" src="JS/flash_text.js"></script>
 <script type="text/javascript" src="JS/stack.v0.js"></script>
 <script type="text/javascript" src="JS/handle_stickies.js"></script>
 </body>
