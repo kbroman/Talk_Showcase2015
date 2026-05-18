@@ -5,7 +5,7 @@ These are slides for a talk that I gave at the
 UW-Madison [Office of Quality Improvement](http://quality.wisc.edu),
 14 April 2015.
 
-See them in action [here](https://www.biostat.wisc.edu/~kbroman/presentations/Showcase2015).
+See them in action [here](https://kbroman.org/Talk_Showcase2015).
 
 ---
 
